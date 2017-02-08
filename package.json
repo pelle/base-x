@@ -1,7 +1,7 @@
 {
-  "name": "base-x",
-  "version": "2.0.4",
-  "description": "Fast base encoding / decoding of any given alphabet",
+  "name": "base-x-bytearray",
+  "version": "0.1.0",
+  "description": "Fast base encoding / decoding of any given alphabet to Uint8Array/Buffer",
   "keywords": [
     "base-x",
     "base58",
@@ -14,9 +14,9 @@
     "encode",
     "encoding"
   ],
-  "homepage": "https://github.com/cryptocoinjs/base-x",
+  "homepage": "https://github.com/pelle/base-x",
   "bugs": {
-    "url": "https://github.com/cryptocoinjs/base-x/issues"
+    "url": "https://github.com/pelle/base-x/issues"
   },
   "license": "MIT",
   "author": "Daniel Cousens",

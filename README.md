@@ -1,12 +1,16 @@
 # base-x
 
-[![NPM Package](https://img.shields.io/npm/v/base-x.svg?style=flat-square)](https://www.npmjs.org/package/base-x)
-[![Build Status](https://img.shields.io/travis/cryptocoinjs/base-x.svg?branch=master&style=flat-square)](https://travis-ci.org/cryptocoinjs/base-x)
+[![NPM Package](https://img.shields.io/npm/v/base-x.svg?style=flat-square)](https://www.npmjs.org/package/base-x-bytearray)
+[![Build Status](https://img.shields.io/travis/cryptocoinjs/base-x.svg?branch=master&style=flat-square)](https://travis-ci.org/pelle/base-x)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Fast base encoding / decoding of any given alphabet using bitcoin style leading
 zero compression.
+
+This is forked from [cryptocoinjs/base-x](https://github.com/cryptocoinjs/base-x)
+
+And simply uses Uint8array if Buffer isn't already available.
 
 ## Example
 
@@ -19,7 +23,7 @@ var bs58 = require('base-x')(BASE58)
 var decoded = bs58.decode('5Kd3NBUAdUnhyzenEwVLy9pBKxSwXvE9FMPyR4UKZvpe6E3AgLr')
 
 console.log(decoded)
-// => <Buffer 80 ed db dc 11 68 f1 da ea db d3 e4 4c 1e 3f 8f 5a 28 4c 20 29 f7 8a d2 6a f9 85 83 a4 99 de 5b 19>
+// => <Uint8array- 80 ed db dc 11 68 f1 da ea db d3 e4 4c 1e 3f 8f 5a 28 4c 20 29 f7 8a d2 6a f9 85 83 a4 99 de 5b 19>
 
 console.log(bs58.encode(decoded))
 // => 5Kd3NBUAdUnhyzenEwVLy9pBKxSwXvE9FMPyR4UKZvpe6E3AgLr
