@@ -1,6 +1,6 @@
 {
   "name": "base-x-bytearray",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Fast base encoding / decoding of any given alphabet to Uint8Array/Buffer",
   "keywords": [
     "base-x",

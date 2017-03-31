@@ -72,7 +72,7 @@ module.exports = function base (ALPHABET) {
     for (var k = 0; string[k] === LEADER && k < string.length - 1; ++k) {
       bytes.push(0)
     }
-    if (ByteArray.name === 'Uint8array') {
+    if (ByteArray.name === 'Uint8Array') {
       // This handles an issue in safari
       return new Uint8Array(bytes.reverse())
     }
